@@ -88,7 +88,7 @@ if st.session_state.committee_status == "SUCCESSFUL":
         st.session_state.committee_status = "In Session"
         st.rerun()
 else:
-    st.title("🏛️ MAROON COMMAND (2026)")
+    st.title("🏛️ Futuristic General Assembly (MUN)")
     st.info(f"**CURRENT DIRECTIVE:** {st.session_state.agenda}")
 
     tab1, tab2, tab3 = st.tabs(["📊 Registry", "🎙️ Speakers (GSL)", "🗳️ Voting"])
@@ -178,4 +178,5 @@ else:
                 st.balloons()
                 st.success("PASSED")
             else:
+
                 st.error("FAILED")
